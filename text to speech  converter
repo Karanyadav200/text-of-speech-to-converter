@@ -1,0 +1,21 @@
+import pyttsx3
+
+engine = pyttsx3.init()
+"""VOICES"""
+voices = engine.getProperty('voices')
+engine.setProperty('voices', voices[0].id)
+
+"""RATE"""
+voices = engine.getProperty('rate')
+engine.setProperty('voices', 150)
+
+
+"""VOICES"""
+volume = engine.getProperty('volume')
+engine.setProperty('voices', 1)
+
+engine.say("Hello HOW ARE YOU.")
+engine.runAndWait()
+
+
+    
